@@ -7,7 +7,7 @@ class PhishySitesController < ApplicationController
               score: @article.score,
               category: @article.category}
     else
-      msg = { url: params[:url],
+      msg = { url: request.headers["url"],
               score: 0,
               category: 'Safe'}
     end
