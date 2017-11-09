@@ -1,0 +1,2 @@
+class PhishySite < ApplicationRecord
+end
